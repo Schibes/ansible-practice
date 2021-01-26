@@ -1,0 +1,10 @@
+all:
+  hosts:
+    endeavour-ansible.schibes.com
+    tumbleweed.schibes.com
+    ubuntu20-ansible.schibes.com
+  children:
+    fedora:
+      hosts:
+        f33-nano.schibes.com
+        f33-lxc.schibes.com
