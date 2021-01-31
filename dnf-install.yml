@@ -1,0 +1,26 @@
+---
+# Software playbook
+#
+
+- name: Install required software on RHEL8/CentOS8/Fedora
+  hosts: all
+  become: yes
+  tasks:
+   - dnf:
+      name: "{{ packages }}"
+      state: present
+     vars:
+       packages:
+        - vim
+        - tmux
+        - ncdu
+        - htop
+        - nmap
+        - git
+        - nfs-utils
+        - nginx
+
+   - service:
+      name: nginx
+      state: started
+      enabled: yes
