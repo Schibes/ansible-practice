@@ -3,7 +3,7 @@
 #
 
 - name: Install required software on RHEL8/CentOS8/Fedora
-  hosts: all
+  hosts: fedora
   become: yes
   tasks:
    - dnf:
