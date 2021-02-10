@@ -1,7 +1,7 @@
 all:
   hosts:
-    endeavour-ansible.schibes.com:
-    tumbleweed.schibes.com:
+    tumbleweed:
+    endeavour:
     ubuntu20-ansible.schibes.com:
   children:
     fedora:
